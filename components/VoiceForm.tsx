@@ -66,7 +66,7 @@ const VoiceForm: React.FC<VoiceFormProps> = ({ onAddProduct }) => {
       <div
         className={`w-full text-center text-sm py-1.5 px-3 rounded-lg transition-all duration-300 ${
           isAlertVisible
-            ? "opacity-100 scale-100 bg-indigo-950/60 text-indigo-300 border border-indigo-800/50"
+            ? "opacity-100 scale-100 bg-emerald-900/80 text-emerald-200 border border-emerald-800/50"
             : "opacity-0 scale-95 pointer-events-none h-0 p-0 overflow-hidden"
         }`}
       >

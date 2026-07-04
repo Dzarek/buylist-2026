@@ -1,0 +1,22 @@
+{
+  "theme_color": "#006045",
+  "background_color": "#fff",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "name": "Lista Zakupów",
+  "short_name": "Lista Zakupów",
+  "description": "Lista Zakupów",
+  "icons": [
+    {
+      "sizes": "192x192",
+      "src": "/bigLogo.png",
+      "type": "image/png"
+    },
+    {
+      "sizes": "512x512",
+      "src": "/bigLogo.png",
+      "type": "image/png"
+    }
+  ]
+}
