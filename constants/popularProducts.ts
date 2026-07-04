@@ -32,6 +32,16 @@ export const JEDZENIE: PopularProductIconItem[] = [
     alt: "tortilla",
     category: "pieczywo",
   },
+  {
+    src: "https://img.icons8.com/?size=100&id=38078&format=png&color=000000",
+    alt: "rogalik",
+    category: "pieczywo",
+  },
+  {
+    src: "https://img.icons8.com/?size=100&id=35782&format=png&color=000000",
+    alt: "donat",
+    category: "pieczywo",
+  },
   // NABIAŁ
   {
     src: "https://img.icons8.com/officel/40/000000/butter.png",
@@ -68,10 +78,25 @@ export const JEDZENIE: PopularProductIconItem[] = [
     alt: "jajka",
     category: "nabiał",
   },
+  {
+    src: "https://img.icons8.com/?size=100&id=X5CsT93JpR2V&format=png&color=000000",
+    alt: "skyr",
+    category: "nabiał",
+  },
+  {
+    src: "https://img.icons8.com/?size=100&id=im67f42onMsc&format=png&color=000000",
+    alt: "serek wiejski",
+    category: "nabiał",
+  },
   // OWOCE
   {
     src: "https://img.icons8.com/office/40/000000/apple.png",
     alt: "jabłka",
+    category: "owoce",
+  },
+  {
+    src: "https://img.icons8.com/?size=100&id=69967&format=png&color=000000",
+    alt: "gruszki",
     category: "owoce",
   },
   {
@@ -117,6 +142,11 @@ export const JEDZENIE: PopularProductIconItem[] = [
   {
     src: "https://img.icons8.com/color/48/000000/blueberry.png",
     alt: "borówki",
+    category: "owoce",
+  },
+  {
+    src: "https://img.icons8.com/?size=100&id=6Eewnl6DvNdF&format=png&color=000000",
+    alt: "maliny",
     category: "owoce",
   },
   // WARZYWA
@@ -171,19 +201,34 @@ export const JEDZENIE: PopularProductIconItem[] = [
     category: "warzywa",
   },
   {
-    src: "https://img.icons8.com/officel/40/000000/corn.png",
-    alt: "kukurydza",
+    src: "https://img.icons8.com/?size=100&id=7-N0xVLYugP1&format=png&color=000000",
+    alt: "dynia",
     category: "warzywa",
   },
   {
-    src: "https://img.icons8.com/officel/40/000000/mushroom.png",
-    alt: "grzyby",
+    src: "https://img.icons8.com/?size=100&id=4z2OqpzSeiFc&format=png&color=000000",
+    alt: "pieczarki",
     category: "warzywa",
   },
   // MIĘSO
   {
     src: "https://img.icons8.com/cotton/64/000000/ham.png",
     alt: "szynka",
+    category: "mięso",
+  },
+  {
+    src: "https://img.icons8.com/?size=100&id=OUwl48cizKNG&format=png&color=000000",
+    alt: "salami",
+    category: "mięso",
+  },
+  {
+    src: "https://img.icons8.com/?size=100&id=NeAZ8r40Ne1g&format=png&color=000000",
+    alt: "boczek",
+    category: "mięso",
+  },
+  {
+    src: "https://img.icons8.com/?size=100&id=71983&format=png&color=000000",
+    alt: "kiełbaski",
     category: "mięso",
   },
   {
@@ -203,12 +248,12 @@ export const JEDZENIE: PopularProductIconItem[] = [
   },
   {
     src: wieprzoweImg,
-    alt: "mięso wieprzowe",
+    alt: "wieprzowina",
     category: "mięso",
   },
   {
     src: wołoweImg,
-    alt: "mięso wołowe",
+    alt: "wołowina",
     category: "mięso",
   },
   // PRZEKĄSKI
@@ -227,18 +272,29 @@ export const JEDZENIE: PopularProductIconItem[] = [
     alt: "chipsy",
     category: "przekąski",
   },
+  {
+    src: "https://img.icons8.com/?size=100&id=97192&format=png&color=000000",
+    alt: "popcorn",
+    category: "przekąski",
+  },
+  {
+    src: "https://img.icons8.com/?size=100&id=31719&format=png&color=000000",
+    alt: "orzeszki",
+    category: "przekąski",
+  },
 
   {
     src: "https://img.icons8.com/officel/40/000000/ice-cream-cone.png",
     alt: "lody",
     category: "przekąski",
   },
-  {
-    src: "https://img.icons8.com/fluency/48/almond-butter.png",
-    alt: "masło orzechowe",
-    category: "przekąski",
-  },
+
   // NAPOJE
+  {
+    src: "https://img.icons8.com/?size=100&id=34650&format=png&color=000000",
+    alt: "woda",
+    category: "napoje",
+  },
   {
     src: "https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/000000/external-tea-morning-flaticons-lineal-color-flat-icons.png",
     alt: "herbata",
@@ -326,6 +382,11 @@ export const JEDZENIE: PopularProductIconItem[] = [
     category: "inne",
   },
   {
+    src: "https://img.icons8.com/?size=100&id=W9W7CXi8fFRE&format=png&color=000000",
+    alt: "warzywa na patelnie",
+    category: "inne",
+  },
+  {
     src: "https://img.icons8.com/office/40/000000/spaghetti.png",
     alt: "makaron",
     category: "inne",
@@ -343,6 +404,11 @@ export const JEDZENIE: PopularProductIconItem[] = [
   {
     src: "https://img.icons8.com/officel/40/000000/spoon-of-sugar.png",
     alt: "cukier",
+    category: "inne",
+  },
+  {
+    src: "https://img.icons8.com/fluency/48/almond-butter.png",
+    alt: "masło orzechowe",
     category: "inne",
   },
 ];

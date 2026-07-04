@@ -6,6 +6,7 @@ import {
   createUserWithEmailAndPassword,
 } from "firebase/auth";
 import { auth } from "@/lib/firebase";
+import Image from "next/image";
 
 export const AuthScreen: React.FC = () => {
   const [isRegister, setIsRegister] = useState(false);
@@ -33,11 +34,15 @@ export const AuthScreen: React.FC = () => {
     <div className="flex min-h-full items-center justify-center bg-slate-100 px-4 py-12 sm:px-6 lg:px-8">
       <div className="w-full max-w-md space-y-8 bg-white p-8 rounded-3xl border border-slate-200 shadow-xl">
         <div>
-          <div className="mx-auto h-12 w-12 rounded-full bg-emerald-600 flex items-center justify-center text-xl text-white shadow-sm font-bold">
-            🛒
-          </div>
-          <h2 className="mt-6 text-center text-2xl font-bold tracking-tight text-slate-900">
-            {isRegister ? "Stwórz konto rodzinne" : "Zaloguj się do listy"}
+          <Image
+            src="/bigLogo.png"
+            alt="logo"
+            width={20}
+            height={20}
+            className="h-12 w-12  mx-auto"
+          />
+          <h2 className="mt-6 text-center uppercase text-xl font-bold tracking-tight text-slate-900">
+            {isRegister ? "rejestracja" : "logowanie"}
           </h2>
         </div>
 
@@ -47,7 +52,7 @@ export const AuthScreen: React.FC = () => {
               {error}
             </div>
           )}
-          <div className="space-y-3 rounded-md shadow-sm">
+          <div className="space-y-3 rounded-md">
             <div>
               <input
                 type="email"
