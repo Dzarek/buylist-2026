@@ -13,6 +13,16 @@ import {
 } from "firebase/firestore";
 import { db } from "@/lib/firebase";
 import { Product, ProductCategory } from "@/types";
+import toast from "react-hot-toast";
+
+const toastStyle = {
+  borderRadius: "10px",
+  background: "#006045",
+  border: "1px solid #aaa",
+  color: "#fff",
+  fontSize: "12px",
+  textTransform: "uppercase" as const,
+};
 
 export const useShoppingList = (userId: string | undefined) => {
   const [products, setProducts] = useState<Product[]>([]);
@@ -53,7 +63,13 @@ export const useShoppingList = (userId: string | undefined) => {
       },
       (error) => {
         console.error("Błąd pobierania produktów:", error);
-
+        toast.error("Błąd pobierania produktów", {
+          style: {
+            ...toastStyle,
+            border: "1px solid #dc2626",
+            backgroundColor: "#dc2626",
+          },
+        });
         if (!initializedRef.current) {
           initializedRef.current = true;
           setInitialized(true);
@@ -81,8 +97,18 @@ export const useShoppingList = (userId: string | undefined) => {
         completed: false,
         createdAt: Date.now(),
       });
+      toast("Dodano produkt!", {
+        style: { ...toastStyle, border: "1px solid #006045" },
+      });
     } catch (error) {
       console.error("Błąd dodawania produktu:", error);
+      toast.error("Błąd dodawania produktu", {
+        style: {
+          ...toastStyle,
+          border: "1px solid #dc2626",
+          backgroundColor: "#dc2626",
+        },
+      });
     }
   };
 
@@ -95,6 +121,13 @@ export const useShoppingList = (userId: string | undefined) => {
       });
     } catch (error) {
       console.error("Błąd aktualizacji statusu:", error);
+      toast.error("Błąd aktualizacji statusu", {
+        style: {
+          ...toastStyle,
+          border: "1px solid #dc2626",
+          backgroundColor: "#dc2626",
+        },
+      });
     }
   };
 
@@ -104,6 +137,13 @@ export const useShoppingList = (userId: string | undefined) => {
     try {
       await deleteDoc(doc(db, "users", userId, "products", id));
     } catch (error) {
+      toast.error("Błąd usuwania produktu", {
+        style: {
+          ...toastStyle,
+          border: "1px solid #dc2626",
+          backgroundColor: "#dc2626",
+        },
+      });
       console.error("Błąd usuwania produktu:", error);
     }
   };
@@ -118,7 +158,17 @@ export const useShoppingList = (userId: string | undefined) => {
       snapshot.forEach((doc) => batch.delete(doc.ref));
 
       await batch.commit();
+      toast.success("Wyczyszczono listę zakupów!", {
+        style: { ...toastStyle, border: "1px solid #006045" },
+      });
     } catch (error) {
+      toast.error("Błąd czyszczenia listy", {
+        style: {
+          ...toastStyle,
+          border: "1px solid #dc2626",
+          backgroundColor: "#dc2626",
+        },
+      });
       console.error("Błąd czyszczenia listy:", error);
     }
   };

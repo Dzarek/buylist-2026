@@ -37,8 +37,8 @@ export const AuthScreen: React.FC = () => {
           <Image
             src="/bigLogo.png"
             alt="logo"
-            width={20}
-            height={20}
+            width={50}
+            height={50}
             className="h-12 w-12  mx-auto"
           />
           <h2 className="mt-6 text-center uppercase text-xl font-bold tracking-tight text-slate-900">

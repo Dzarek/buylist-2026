@@ -6,6 +6,7 @@ import {
   CHEMIA,
   PopularProductIconItem,
 } from "@/constants/popularProducts";
+import Image from "next/image";
 
 interface QuickAddGridProps {
   onAddProduct: (
@@ -98,11 +99,13 @@ export const QuickAddGrid: React.FC<QuickAddGridProps> = ({ onAddProduct }) => {
                   <button
                     key={idx}
                     onClick={() => onAddProduct(product.alt, mainCategoryParam)}
-                    className={`flex flex-col items-center justify-center p-3 rounded-xl border border-dashed transition-all active:scale-95 text-center min-h-[76px] ${borderClass}`}
+                    className={`flex flex-col items-center justify-center p-3 rounded-xl border border-dashed transition-all active:scale-90 active:saturate-0 text-center min-h-[76px] ${borderClass}`}
                   >
-                    <img
+                    <Image
                       src={product.src}
                       alt={product.alt}
+                      width={40}
+                      height={40}
                       className="w-8 h-8 object-contain mb-1 drop-shadow-sm"
                       loading="lazy"
                     />
